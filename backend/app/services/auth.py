@@ -28,7 +28,7 @@ def verify_password(plain_password, hashed_password):
 
 
 def get_password_hash(password):
-    return pwd_context.hash(password)
+    return pwd_context.hash(password[:72])
 
 
 # TODO: Replace this with a proper user model
